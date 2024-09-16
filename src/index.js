@@ -89,10 +89,9 @@ app.delete("/mahasiswa/:nim", (req, res) => {
   })
 })
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`
      SERVER BACKEND TELAH BERJALAN !
-     HOST -> localhost
      PORT -> ${port}
   `)
 })
